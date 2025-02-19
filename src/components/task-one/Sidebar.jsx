@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CardSection from "./CardSection";
+import UserCard from "./UserCard";
 
 const Sidebar = () => {
     const [inputData, setInputData] = useState({
@@ -91,7 +91,7 @@ const Sidebar = () => {
 
             {/* Card Section */}
             <div className="w-full md:w-3/4 bg-gray-700">
-                <CardSection users={users} setUsers={setUsers} setInputData={setInputData} setEditingId={setEditingId} />
+                <UserCard users={users} setUsers={setUsers} setInputData={setInputData} setEditingId={setEditingId} />
             </div>
         </div>
     );

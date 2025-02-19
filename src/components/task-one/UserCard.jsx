@@ -2,7 +2,7 @@ import React from "react";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoMdHeart } from "react-icons/io";
 
-const CardSection = ({ users, setUsers, setInputData, setEditingId }) => {
+const UserCard = ({ users, setUsers, setInputData, setEditingId }) => {
     const handleEdit = (id) => {
         const editableUser = users.find((_, i) => i === id);
         setInputData(editableUser);
@@ -76,4 +76,4 @@ const CardSection = ({ users, setUsers, setInputData, setEditingId }) => {
     );
 };
 
-export default CardSection;
+export default UserCard;
